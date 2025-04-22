@@ -38,14 +38,14 @@ int main()
 		{
 			do
 			{
-				printf("\n¿Existe corriente directa?\n1. Si\n2.No\nOpcion: ");
+				printf("\nÂ¿Existe corriente directa?\n1. Si\n2.No\nOpcion: ");
 				scanf("%d",& corrienteD);
 			}while(corrienteD < 1 || corrienteD > 2);
 			if(corrienteD == 1)
 			{
 				do
 				{
-					printf("\n¿Entra o sale?\n1. Entra\n2.Sale\nOpcion: ");
+					printf("\nÂ¿Entra o sale?\n1. Entra\n2.Sale\nOpcion: ");
 					scanf("%d",& enSa);
 				}while(enSa < 1 || enSa > 2);
 				if(enSa == 1)
@@ -66,14 +66,14 @@ int main()
 			{
 				b[i]=0;
 			}
-			printf("\n¿Cuantas corrientes hay?");
+			printf("\nÂ¿Cuantas corrientes hay?");
 			scanf("%d",&Ncor);
 			for(int j=0; j<Ncor; j++)
 			{
 				printf("\nCorriente I%d",j+1);
 				do
 				{
-					printf("\n¿Entra o sale?\n1. Entra\n2.Sale\nOpcion: ");
+					printf("\nÂ¿Entra o sale?\n1. Entra\n2.Sale\nOpcion: ");
 					scanf("%d",& enSa);
 				}while(enSa < 1 || enSa > 2);
 				if(enSa == 1)
@@ -82,10 +82,10 @@ int main()
 					scanf("%lf", &res);
 					do
 					{
-						printf("\n¿De que nodo sale?");
+						printf("\nÂ¿De que nodo sale?");
 						scanf("%d", &noA);
 						noA= noA- 1;
-						printf("\n¿A que nodo va?");
+						printf("\nÂ¿A que nodo va?");
 						scanf("%d", &nob);
 						nob= nob- 1;
 					}while(noA < 0 || noA >= n && nob < 0 || nob >= n);
@@ -108,7 +108,7 @@ int main()
 				{
 					do
 					{
-						printf("\n¿El nodo va a tierra o va a otro nodo?\n1.Tierra\n2.Nodo\nOpcion: ");
+						printf("\nÂ¿El nodo va a tierra o va a otro nodo?\n1.Tierra\n2.Nodo\nOpcion: ");
 						scanf("%d",&enSa);
 					}while(enSa < 1 || enSa > 2);
 					printf("\nIngresa el valor de la resistencia: ");
@@ -118,7 +118,7 @@ int main()
 					{
 						do
 						{
-							printf("\n¿De que nodo?");
+							printf("\nÂ¿De que nodo?");
 							scanf("%d", &nob);
 							nob= nob- 1;
 						}while(nob < 0 || nob >= n);
@@ -139,10 +139,10 @@ int main()
 					{
 						do
 						{
-							printf("\n¿De que nodo sale?");
+							printf("\nÂ¿De que nodo sale?");
 							scanf("%d", &noA);
 							noA= noA- 1;
-							printf("\n¿De que nodo a donde va?");
+							printf("\nÂ¿De que nodo a donde va?");
 							scanf("%d", &nob);
 							nob= nob- 1;
 						}while(noA < 0 || noA >= n && nob < 0 || nob >= n);
